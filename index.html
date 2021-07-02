@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        .main-div{
+            position:relative;
+            border: 2px solid black;
+            width:75%;
+            height: 900px;
+            margin-left: 100px;
+            margin-top:40px;
+        }
+        .name{
+           position:absolute;
+           top:20px;
+           left: 45px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input{
+             border:3px solid lightgrey;
+        }
+        span{
+            color:red;
+        }
+        table{
+            width:100%;
+            
+            border-collapse:collapse;
+            
+        
+        }
+        th,td{
+            padding:8px;
+        }
+        tr:nth-child(even) {
+            background-color:lightgrey;
+        }
+
+    
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-div">
+       <div class="name">
+        <label for="name ">Name<span>*</span></label><br>
+       <div style="margin-top: 6px;">
+        <input type="text" name="firstname" id="name">
+        <input style="margin-left:25px;" type="text" name="firstname" id="name">
+        </div>
+
+        <p style="font-family: Arial, Helvetica, sans-serif;word-spacing:10em;margin-top: 1px;margin-left: 1px;">First   Last</p>
+        <div class="mail">
+        <label for="email">Email</label><span>*</span><br>
+        <div style="margin-top: 6px;">
+        <input style="padding-right: 200px;" type="email" name="email" id="email">
+        </div>
+        </div>
+
+        <div>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Your Experience <span>*</span></p>
+            <p style="margin-top:-10px;font-size: x-large;"> ⭐⭐⭐⭐⭐</p>
+            <p style="margin-top:-7px;font-size:small;">Overall,how would you rate your exeprience with us?</p>
+        </div>
+
+        
+        <div>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How satisfied are you with<span>*</span></p>
+            <table>
+                
+                <tr>
+                    <th> </th>
+                    <th>very unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>likely</th>
+                    <th>very likely</th>
+                </tr>
+               
+                    <tr>
+                   <td>Purchase</td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   </tr>
+                   <tr>
+                    <td >Service</td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    </tr>
+                    <tr>
+                        <td >Company Overall</td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        </tr>
+                
+
+                
+        
+            </table>
+        </div>
+
+
+        <div>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How likely are you with<span>*</span></p>
+            <table>
+                
+                <tr>
+                    <th> </th>
+                    <th>very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>satisfied</th>
+                    <th>very satisfied</th>
+                </tr>
+               
+                    <tr>
+                   <td >Buy from us again</td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                   </tr>
+                   <tr>
+                    <td >Recommend our products<br> to other</td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Recommend our Company <br> to other</td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        <td align="center"><input value="1" id="type_radio_1" name="type_radio" type="radio" /></td>
+                        </tr>
+                
+
+                
+        
+            </table>
+
+            
+       </div>
+
+       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How likely are you with<span>*</span></p>
+
+
+       <textarea rows="5" cols="100">
+
+        </textarea><br>
+        <button style="margin-top:10px;padding:15px;">Submit</button>
+          
+       </div>
+
+       
+         
+
+    
+    </div>
+</body>
+</html>
